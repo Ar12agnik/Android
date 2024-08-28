@@ -1,24 +1,46 @@
 package com.example.loginreset;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+import com.example.loginreset.R;
 
 public class MainActivity extends AppCompatActivity {
+    Button Submit,Reset;
+    EditText Email,Password;
+    TextView Result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        Submit=findViewById(R.id.Login);
+        Reset=findViewById(R.id.Reset);
+        Email=findViewById(R.id.Email);
+        Password=findViewById(R.id.Password);
+        Result=findViewById(R.id.Result);
+        Submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String email=Email.getText().toString();
+                String password=Password.getText().toString();
+                Result.setText("Email Id:"+email+"\nPassword: "+password);
+            }
+        });
+        Reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Email.setText("");
+                Password.setText("");
+                Result.setText("");
+            }
         });
     }
+
 }
+
