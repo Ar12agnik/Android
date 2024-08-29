@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="245dp">
+
+        <Button
+            android:id="@+id/s"
+            android:layout_width="98dp"
+            android:layout_height="68dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="159dp"
+            android:layout_marginBottom="162dp"
+            android:text="Sinchan" />
+
+        <Button
+            android:id="@+id/J"
+            android:layout_width="108dp"
+            android:layout_height="67dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="147dp"
+            android:layout_marginTop="89dp"
+            android:layout_marginEnd="156dp"
+            android:layout_marginBottom="89dp"
+            android:text="Jerry" />
+
+        <Button
+            android:id="@+id/T"
+            android:layout_width="108dp"
+            android:layout_height="62dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="166dp"
+            android:layout_marginEnd="158dp"
+            android:layout_marginBottom="17dp"
+            android:text="Tom" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sinchan Clicked" />
+
+        <TextView
+            android:id="@+id/SinchanClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jerry" />
+
+        <TextView
+            android:id="@+id/JerryClicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tom" />
+
+        <TextView
+            android:id="@+id/Tomclicked"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0" />
+    </LinearLayout>
+</LinearLayout>
+
